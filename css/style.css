@@ -1,0 +1,135 @@
+
+* {
+    box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+body, html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1b1e21;
+}
+div {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+
+/*  MAIN SECTION   */
+.main {
+    margin: 0;
+    padding: 0px 0;
+    background-color: #38425a;
+    background-size: contain;
+}
+.main div.left-pane {
+    margin-top: 0;
+    max-height: available;
+    max-width: available;
+    background-image: url("../images/black_work_tools.jpg");
+}
+.main div p {
+    font-style: normal;
+    text-align: left;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: Montserrat,'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #a2a3a8;
+    margin: 30% 10% 0 10%;
+
+}
+
+.social {
+    padding-left: 25%;
+}
+.social a {
+    position: relative;
+    margin-top: 7%;
+    margin-bottom: 50%;
+    text-align: center;
+    margin-left: 8%;
+}
+.social a:hover {
+   cursor: pointer;
+    text-decoration: underline #FFFFFF 1px;
+   /*
+   height: px;
+   background: red; !* For browsers that do not support gradients *!
+   background: -webkit-linear-gradient(#000000, rgba(255, 255, 255, 0)); !* For Safari 5.1 to 6.0 *!
+   background: -o-linear-gradient(red, yellow); !* For Opera 11.1 to 12.0 *!
+   background: -moz-linear-gradient(red, yellow); !* For Firefox 3.6 to 15 *!
+   background: linear-gradient(#000000, #ffffff); !* Standard syntax (must be last) *!
+   */
+}
+.social-icon img {
+    width: 28px;
+    height: 28px;
+}
+
+.social a:nth-child(1) {
+    margin-left: 18%;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        margin: 0;
+        padding: 0px 0;
+        background-color: #38425a;
+    }
+    .main div.left-pane {
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-image: url("../images/black_work_tools.jpg");
+        background-size: contain;
+    }
+    .main div p {
+        font-style: normal;
+        text-align: left;
+        font-weight: 300;
+        font-size: 32px;
+        font-family: Montserrat,'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #a2a3a8;
+        margin: 35% 10% 0 10%;
+    }
+
+    .social {
+        padding-left: 25%;
+    }
+    .social a {
+        position: relative;
+        margin-top: 7%;
+        margin-bottom: 50%;
+        text-align: center;
+        margin-left: 8%;
+    }
+    .social a:hover {
+        border: #9fcdff solid 1px;
+        border-radius: 50%;
+    }
+    .social-icon img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .social a:nth-child(1) {
+        margin-left: 18%;
+    }
+}
+
+/*  END OF MAIN SECTION    */
